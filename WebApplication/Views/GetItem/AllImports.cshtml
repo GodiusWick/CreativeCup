@@ -1,0 +1,40 @@
+﻿@model WebApplication.Models.Import
+
+<link rel="stylesheet" href="~/css/imports.css">
+
+<a class="pageBlock" asp-controller="GetItem" asp-action="AboutImport" asp-route-id="@Model.uuid">
+    <ul class="listOfImports">
+        <li>
+            <img src="~/img/@Model.src">
+            <p class="TextText">@Model.region</p>
+            <p class="TextSmall">@Model.lan</p>
+            <p class="TextSmall">@Model.log</p>
+            @{
+                if (Model.status == 1)
+                {
+                    <p class="TextSmall">В работе</p>
+                }
+                else if (Model.status == 2)
+                {
+                    <p class="TextSmall">В работеЗавершено с ошибкой</p>
+                }
+                else if (Model.status == 3)
+                {
+                    <p class="TextSmall">Чисто</p>
+                }
+                else if (Model.status == 4)
+                {
+                    <p class="TextSmall">Загрязнения</p>
+                }
+                else if (Model.status == 5)
+                {
+                    <p class="TextSmall">Отправлено на определение</p>
+                }
+
+            }
+            <p class="TextSmall">@Model.status</p>
+
+            <p class="TextSmall">@Model.timeend</p>
+        </li>
+    </ul>
+</a>
