@@ -1,0 +1,26 @@
+﻿@model WebApplication.ViewModels.RegionImportViewModel
+
+<link type="text/css" rel="stylesheet" href="~/css/regions.css">
+
+<div class="pageBlock">
+    <img src="~/img/@Model.importCart.src">
+    <p class="TextText">RGB</p>
+    <img src="~/img/@Model.importCart.src">
+    <p class="TextText">Фильтр</p>
+    <p class="TextSmall">Ширина: @Model.importCart.lan</p>
+    <p class="TextSmall">Долгота: @Model.importCart.lon</p>
+    <p class="TextSmall">Регион: @Model.importCart.region</p>
+    <p class="TextSmall">Статус: @Model.statuses[Model.importCart.status - 1]</p>
+    <p class="TextSmall">Время создания снимка: @Model.importCart.timestamp</p>
+
+    @{
+        if (Model.importCart.status == 5)
+        {
+            <div class="button" style="margin-top: 250px;">
+                <p>Есть разлив</p>
+            </div>
+            <div class="button" style="margin-top: 250px;">
+                <p>Нету разлива</p>
+            </div>
+        }
+    }

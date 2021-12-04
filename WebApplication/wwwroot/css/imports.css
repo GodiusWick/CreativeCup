@@ -1,0 +1,49 @@
+.pageBlock{
+    position: relative;
+    width: 100%;
+    border-style: solid;
+    border-color: transparent;
+}
+
+.listOfImports{
+    list-style: none;
+}
+
+.listOfImports > li{
+    width: 35%;
+    height: 250px;
+    border-style: solid;
+    border-radius: 25px;
+    margin-left: 5%;
+    float: left;
+    margin-right: 5%;
+    transition-duration: 250ms;
+}
+
+.listOfImports > li > img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    border-style: solid;
+    margin-top: 25px;
+    margin-left: 25px;
+    float:left;
+    margin-right: 100px;
+}
+
+.TextText{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.TextSmall{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.listOfImports > li:hover{
+    background-color: blue;
+    color:white;
+}

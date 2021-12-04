@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "5eZT2wPn4zMyJkI3GHhO9/cCoeHY6xspPqvI3D+/o7WLSUYX6G6p6fnyuip0CzIExKQQl4KOndDG7InuNXrQFg==",
+  "success": true,
+  "projectFilePath": "/Users/moratherest/Projects/TestJWT.Web.API/WebApplication/WebApplication.csproj",
+  "expectedPackageFiles": [
+    "/Users/moratherest/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
