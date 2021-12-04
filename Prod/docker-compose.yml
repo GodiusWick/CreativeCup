@@ -1,0 +1,16 @@
+version: "3.8"
+
+services: 
+  scheduler:
+    build: ./Scheduler
+    command: ./Scheduler
+    ports:
+      - 49160:49000
+    depends_on: 
+      - core
+
+  core:
+    build: ./Core
+    command: ./Core
+    ports:
+      - 49162:
