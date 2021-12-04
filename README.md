@@ -46,7 +46,7 @@ pip install pytorch eolearn
 ## Запуск 
 Скомпилировать `Prod/Core` и `Prod/Scheduler`, запустить  
 Запустить сервис распознавания, перейдя в `Prod/app` и выполнив `python launch.py`
-Запустить UI, перейдя в папку `WebApplication` и выполнив `dotnet watch` 
+Запустить UI, перейдя в папку `WebApplication` и выполнив `dotnet watch`  
 Сервис будет доступен по указанному адресу  
 
 ## Использование
